@@ -145,6 +145,61 @@
           color: gray; 
           padding: 12px 0; 
         }
+        @media screen and (max-width: 800px) {
+            
+            .box{
+                flex-direction: column;
+            }
+            .secondsection .vertical{
+                height: unset;
+            }
+            .vertical-title, .vertical-desc{
+                left: 45px;
+            }
+            .secondsection.box{
+                width: 50vw;
+            }
+            nav{
+                flex-direction: column;
+            }
+            .firstsection{
+                flex-direction: column-reverse;
+            }
+            .leftsection{
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .secondsection{
+                max-width: 80vw;
+                margin: auto;
+                height: 141vh;
+            }
+            .rightsection{
+                width: 721px !important;
+                display: flex;
+                 justify-content: center;
+
+            }
+            .rightsection img{
+                width: 45vw;
+                margin-bottom: 72px;
+            }
+            .image-top{
+                top: 133px;
+            }
+            .secondsection{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            body{
+                min-width: fit-content;
+            }
+            
+        }
     </style>
 </head>
 
@@ -167,7 +222,7 @@
     <main>
         <section class="firstsection">
             <div class="leftsection">
-                Hi, My name is <span class="purple">Harshit!</span>
+                <div>Hi, My name is <span class="purple">Harshit!</span></div>
                 <div>I am a Passionate </div> 
                 <span class="red"> Engineer</span>
                 <div class="buttons">
