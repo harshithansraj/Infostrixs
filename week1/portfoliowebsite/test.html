@@ -5,239 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harshit's Portfolio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-        }
-
-        .profile-image {
-            width: 60px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: 10px;
-            vertical-align: middle;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(4, 4, 119);
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            margin: 0 23px;
-        }
-
-        nav ul li a:hover {
-            color: brown;
-            font: 1.1rem;
-        }
-
-        main hr {
-            border: 0;
-            background: rgb(153, 153, 226);
-            height: 1.2px;
-            margin: 40px 84px;
-        }
-
-        .left {
-            font-size: 1.5rem;
-        }
-
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            margin: 130px 0;
-            align-items: center;
-        }
-
-        .firstsection>div {
-            width: 30%;
-        }
-
-        .leftsection {
-            font-size: 3rem;
-        }
-
-        .leftsection .buttons {
-            padding: 40px 0;
-        }
-
-        .leftsection .btn {
-            padding: 12px;
-            background: #1e2167;
-            color: white;
-            border: 2px solid white;
-            border-radius: 6px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        .rightsection img {
-            width: 80%;
-        }
-
-        .purple {
-            color: blueviolet;
-        }
-
-        .red {
-            color: red;
-        }
-
-        .gray-text {
-            color: grey;
-        }
-
-        .secondsection {
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
-        }
-
-        .secondsection h1 {
-            font-size: 1.9rem;
-        }
-
-        .secondsection .box {
-            background: white;
-            width: 77vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
-
-        .secondsection .vertical {
-            height: 93px;
-            width: 1px;
-            background-color: white;
-            margin: 0 120px;
-        }
-
-        .image-top {
-            width: 23px;
-            position: relative;
-            top: -32px;
-            left: -9px;
-        }
-
-        .vertical-title {
-            position: relative;
-            top: 75px;
-            width: 150px;
-            font-size: 14px;
-        }
-
-        .vertical-desc {
-            position: relative;
-            top: 86px;
-            color: gray;
-            width: 150px;
-            font-size: 9px;
-        }
-
-        footer {
-            background-color: #0e0e1a;
-
-        }
-
-        .footer {
-            display: flex;
-            padding: 23px 122px;
-            justify-content: space-evenly;
-        }
-
-        .footer ul {
-            list-style: none;
-        }
-
-        .footer>div {
-            width: 233px;
-        }
-
-        footer .footer-right {
-            text-align: center;
-            color: gray;
-            padding: 12px 0;
-        }
-
-        @media screen and (max-width: 800px) {
-            
-            .box{
-                flex-direction: column;
-            }
-            .secondsection .vertical{
-                height: unset;
-            }
-            .vertical-title, .vertical-desc{
-                left: 45px;
-            }
-            .secondsection.box{
-                width: 50vw;
-            }
-            nav{
-                flex-direction: column;
-            }
-            .firstsection{
-                flex-direction: column-reverse;
-            }
-            .leftsection{
-                width: 100% !important;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-            .secondsection{
-                max-width: 80vw;
-                margin: auto;
-                height: 141vh;
-            }
-            .rightsection{
-                width: 721px !important;
-                display: flex;
-                 justify-content: center;
-
-            }
-            .rightsection img{
-                width: 45vw;
-                margin-bottom: 72px;
-            }
-            .image-top{
-                top: 133px;
-            }
-            .secondsection{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            body{
-                min-width: fit-content;
-            }
-            
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -251,9 +19,9 @@
             <div class="right">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="https://github.com/harshithansraj" target="_blank">Projects</a></li>
+                    <li><a href="mailto:hansrajharshit@gmail.com">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -263,10 +31,10 @@
             <div class="leftsection">
                 <div>Hi, My name is <span class="purple">Harshit!</span></div>
                 <div>I am a Passionate </div>
-                <span class="red"> Engineer</span>
+                <span class="red"> Software Engineer</span>
                 <div class="buttons">
-                    <button class="btn">Resume</button>
-                    <button class="btn">GitHub</button>
+                    <button class="btn" onclick="window.open('https://docs.google.com/document/d/1PGLm23ByNmFEFNCj60IzYzU2P_WIBQGEXX25pgCUvc0/edit?usp=sharing')">Resume</button>
+                    <button class="btn" onclick="window.open('https://github.com/harshithansraj')">GitHub</button>
                 </div>
             </div>
             <div class="rightsection">
@@ -280,8 +48,8 @@
             <h1>Work Experience</h1>
             <div class="box">
                 <div class="vertical">
-                    <img src="/Users/harshithansraj/Desktop/infostrixs/Infostrixs/week1/portfoliowebsite/spaces_50j5YEVdcHSEBkJs6Z37_icon_aQFCWFLhCXOoEAOq9f9K_LogoOnly.webp"
-                        alt="img" class="image-top">
+                    <img src="spaces_50j5YEVdcHSEBkJs6Z37_icon_aQFCWFLhCXOoEAOq9f9K_LogoOnly.webp" alt="img"
+                        class="image-top">
                     <div class="vertical-title">
                         Predict Ram<br>
                         <span>Research Analyst</span>
@@ -291,8 +59,7 @@
                     </div>
                 </div>
                 <div class="vertical">
-                <img src="/Users/harshithansraj/Desktop/infostrixs/Infostrixs/week1/portfoliowebsite/1519877714649.jpeg"
-                        alt="img" class="image-top">
+                    <img src="1519877714649.jpeg" alt="img" class="image-top">
                     <div class="vertical-title">
                         ESOM<br>
                         <span>Managemnent Commitee Member </span>
@@ -302,8 +69,7 @@
                     </div>
                 </div>
                 <div class="vertical">
-                    <img src="/Users/harshithansraj/Desktop/infostrixs/Infostrixs/week1/portfoliowebsite/eCellLight.cb55d510.png"
-                        alt="img" class="image-top">
+                    <img src="eCellLight.cb55d510.png" alt="img" class="image-top">
                     <div class="vertical-title">
                         E-Cell<br>
                         <span>Executive</span>
@@ -313,8 +79,7 @@
                     </div>
                 </div>
                 <div class="vertical">
-                    <img src="/Users/harshithansraj/Desktop/infostrixs/Infostrixs/week1/portfoliowebsite/1687286849534.jpeg"
-                        alt="img" class="image-top">
+                    <img src="1687286849534.jpeg" alt="img" class="image-top">
                     <div class="vertical-title">
                         Infotrixs<br>
                         <span>Frontend Developer Intern</span>
@@ -323,9 +88,9 @@
                         Ongoing
                     </div>
                 </div>
-                    
+
                 <div class="vertical">
-                    <img src="/Users/harshithansraj/Desktop/infostrixs/Infostrixs/week1/portfoliowebsite/png-transparent-google-logo-google-search-meng-meng-company-text-logo-thumbnail.png"
+                    <img src="png-transparent-google-logo-google-search-meng-meng-company-text-logo-thumbnail.png"
                         alt="img" class="image-top">
                     <div class="vertical-title">
                         Google<br>
